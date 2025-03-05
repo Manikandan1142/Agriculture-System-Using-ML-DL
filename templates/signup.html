@@ -1,0 +1,147 @@
+{% extends 'base.html' %} {% block title %} sign up{% endblock title %} {% block body %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/static/images/4.jpeg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        
+        .text-colors {
+            color: #7dcaf3;
+        }
+    </style>
+    <title>sign up</title>
+</head>
+
+<body>
+
+    <!--About us section-->
+    <div class="hero-image ">
+        <div class="hero-text">
+            <p class="breadcrumbs text-white font-weight-bold"><span class="mr-2"><a href="{{ url_for('hello_world') }}"
+                        class="text-white">Home /</a></span>
+                <span>Sign up</span>
+            </p>
+            <h1 class="mb-0 bread font-weight-bold">Sign up.</h1>
+        </div>
+    </div>
+    <!--/About us section-->
+
+    <div id="signup">
+        <h3 class="text-center text-white pt-5">Signup Form</h3>
+        <div class="container">
+            <div id="signup-row" class="row justify-content-center align-items-center">
+                <div id="signup-column" class="col-md-6">
+                    <div id="signup-box" class="col-md-12 p-4">
+                        <form id="signup-form" class="form p-4 shadow-lg rounded bg-white" action="" method="post">
+                            <h3 class="text-center text-dark">Sign Up</h3>
+                            {{ form.hidden_tag() }}
+                        
+                            {% if not otp_sent %}
+                                <div class="form-group mb-3">
+                                    <label for="full_name" class="text-dark">Full Name:</label>
+                                    {{ form.full_name(class="form-control", placeholder="Enter your full name", autocomplete="name") }}
+                                </div>
+                        
+                                <div class="form-group mb-3">
+                                    <label for="email" class="text-dark">Email:</label>
+                                    {{ form.email(class="form-control", placeholder="Enter your email", autocomplete="email") }}
+                                </div>
+                        
+                                <div class="form-group mb-3">
+                                    <label for="password" class="text-dark">Password:</label>
+                                    <div class="input-group">
+                                        {{ form.password(class="form-control", placeholder="Enter a strong password", autocomplete="new-password") }}
+                                        <button type="button" class="btn btn-outline-secondary" id="togglePassword">👁️</button>
+                                    </div>
+                                </div>
+                        
+                                <div class="form-group mb-3">
+                                    <label for="phone" class="text-dark">Phone:</label>
+                                    {{ form.phone(class="form-control", placeholder="Enter your phone number", autocomplete="tel") }}
+                                </div>
+                        
+                                <div class="form-group text-center">
+                                    {{ form.submit(class="btn btn-dark btn-lg w-100", value="Send OTP") }}
+                                </div>
+                        
+                            {% else %}
+                                <div class="form-group mb-3">
+                                    <label for="otp_code" class="text-dark">Enter OTP:</label>
+                                    <input type="text" name="otp_code" class="form-control" placeholder="Enter OTP">
+                                </div>
+                        
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-success btn-lg w-100">Verify OTP</button>
+                                </div>
+                            {% endif %}
+                        </form>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("togglePassword").addEventListener("click", function() {
+            let passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        });
+        </script>
+        {% if current_user.is_authenticated %}
+        <script>
+            window.location.href = "{{ url_for('dashboard') }}";
+        </script>
+    
+    {% endif %}
+    
+    
+    <footer class="page-footer font-small blue pt-5">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-dark text-light p-2" style="background-image: url(https://images.pexels.com/photos/5980/food-sunset-love-field.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);background-size: cover; height: 100px; background-position: center; position:center;">
+            <h5> © 2025 Copyright: Smart Agriculture System
+                <div class="text-center text-white text-uppercase font-weight-bold">Go Green....</div>
+            </h5>
+        </div>
+
+        <!-- Copyright -->
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+{% endblock body %}

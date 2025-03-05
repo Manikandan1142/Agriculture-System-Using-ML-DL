@@ -1,0 +1,201 @@
+{
+    "aphids": {
+        "name_ta": "அஃபிட்கள் (சிறிய பச்சை பூச்சி)",
+        "name_en": "Aphids",
+        "pesticides": [
+            {
+                "name_ta": "இமிடக்ளோப்ரிட்",
+                "name_en": "Imidacloprid",
+                "dosage_ta": "2 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "2 ml per 1 liter of water",
+                "image": "static/pesticides/imidacloprid.jpg"
+            },
+            {
+                "name_ta": "நீம் எண்ணெய்",
+                "name_en": "Neem Oil",
+                "dosage_ta": "5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "5 ml per 1 liter of water",
+                "image": "static/pesticides/neem_oil.jpg"
+            }
+        ],
+        "usage_ta": "இரண்டையும் தண்ணீரில் கலந்து, காலை அல்லது மாலை நேரத்தில் தெளிக்கவும்.",
+        "usage_en": "Mix both in water and spray in the morning or evening."
+    },
+    "armyworm": {
+        "name_ta": "ஆமி வோர்ம் (பயிர்களை அழிக்கும் பூச்சி)",
+        "name_en": "Armyworm",
+        "pesticides": [
+            {
+                "name_ta": "லம்ப்டா-சைஹலோத்ரின்",
+                "name_en": "Lambda-Cyhalothrin",
+                "dosage_ta": "3 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "3 ml per 1 liter of water",
+                "image": "static/pesticides/lambda_cyhalothrin.jpg"
+            },
+            {
+                "name_ta": "ஸ்பினோஸாட்",
+                "name_en": "Spinosad",
+                "dosage_ta": "2.5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "2.5 ml per 1 liter of water",
+                "image": "static/pesticides/spinosad.jpg"
+            }
+        ],
+        "usage_ta": "இரண்டு மருந்துகளையும் கலந்து, இளம் கீடங்கள் தோன்றும்போது தெளிக்கவும்.",
+        "usage_en": "Mix both and spray when larvae appear."
+    },
+    "beetle": {
+        "name_ta": "பிட்ல் (வேர்களை மற்றும் இலைகளை அழிக்கும்)",
+        "name_en": "Beetle",
+        "pesticides": [
+            {
+                "name_ta": "கார்பாரில்",
+                "name_en": "Carbaryl",
+                "dosage_ta": "4 கிராம் / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "4 grams per 1 liter of water",
+                "image": "static/pesticides/carbaryl.jpg"
+            },
+            {
+                "name_ta": "குளோர்பைரிபாஸ்",
+                "name_en": "Chlorpyrifos",
+                "dosage_ta": "3 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "3 ml per 1 liter of water",
+                "image": "static/pesticides/chlorpyrifos.jpg"
+            }
+        ],
+        "usage_ta": "பயிர்களின் மீது தெளிக்கவும். மகசூல் மலரும்போது தெளிக்க வேண்டாம்.",
+        "usage_en": "Spray on crops but avoid during flowering."
+    },
+    "bollworm": {
+        "name_ta": "பால்வோர்ம் (பருத்தி மற்றும் பயிர்களை தாக்கும்)",
+        "name_en": "Bollworm",
+        "pesticides": [
+            {
+                "name_ta": "ஸ்பினோஸாட்",
+                "name_en": "Spinosad",
+                "dosage_ta": "2.5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "2.5 ml per 1 liter of water",
+                "image": "static/pesticides/spinosad.jpg"
+            },
+            {
+                "name_ta": "இன்டோக்சாகார்ப்",
+                "name_en": "Indoxacarb",
+                "dosage_ta": "1.5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "1.5 ml per 1 liter of water",
+                "image": "static/pesticides/indoxacarb.jpg"
+            }
+        ],
+        "usage_ta": "பூச்சி பரவத் தொடங்கும்போது தெளிக்கவும்.",
+        "usage_en": "Spray when infestation begins."
+    },
+    "grasshopper": {
+        "name_ta": "வண்டு (பயிர்களை அழிக்கும்)",
+        "name_en": "Grasshopper",
+        "pesticides": [
+            {
+                "name_ta": "மலதியான்",
+                "name_en": "Malathion",
+                "dosage_ta": "5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "5 ml per 1 liter of water",
+                "image": "static/pesticides/malathion.jpg"
+            },
+            {
+                "name_ta": "லம்ப்டா-சைஹலோத்ரின்",
+                "name_en": "Lambda-Cyhalothrin",
+                "dosage_ta": "3 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "3 ml per 1 liter of water",
+                "image": "static/pesticides/lambda_cyhalothrin.jpg"
+            }
+        ],
+        "usage_ta": "மாலை நேரத்தில் நிலத்தில் தெளிக்கவும்.",
+        "usage_en": "Spray in the evening on fields."
+    },
+    "mites": {
+        "name_ta": "மைட்ஸ் (இலைகளில் பறக்கும் சிறிய பூச்சி)",
+        "name_en": "Mites",
+        "pesticides": [
+            {
+                "name_ta": "அபமேக்டின்",
+                "name_en": "Abamectin",
+                "dosage_ta": "1.5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "1.5 ml per 1 liter of water",
+                "image": "static/pesticides/abamectin.jpg"
+            },
+            {
+                "name_ta": "சல்பர்",
+                "name_en": "Sulfur",
+                "dosage_ta": "5 கிராம் / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "5 grams per 1 liter of water",
+                "image": "static/pesticides/sulfur.jpg"
+            }
+        ],
+        "usage_ta": "இலைகளின் இருபுறமும் தெளிக்கவும்.",
+        "usage_en": "Spray on both sides of the leaves."
+    },
+    "mosquito": {
+        "name_ta": "கொசுக்கள்",
+        "name_en": "Mosquito",
+        "pesticides": [
+            {
+                "name_ta": "பி.டி.ஐ",
+                "name_en": "Bti - Bacillus thuringiensis israelensis",
+                "dosage_ta": "10 கிராம் / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "10 grams per 1 liter of water",
+                "image": "static/pesticides/bti.jpg"
+            },
+            {
+                "name_ta": "டெமெபோஸ்",
+                "name_en": "Temephos",
+                "dosage_ta": "1 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "1 ml per 1 liter of water",
+                "image": "static/pesticides/temephos.jpg"
+            }
+        ],
+        "usage_ta": "நிலநீரில் இவை உள்ள இடங்களில் தெளிக்கவும்.",
+        "usage_en": "Spray in stagnant water areas."
+    },
+    "sawfly": {
+        "name_ta": "சாஃப்ளை (இலைகளை அழிக்கும் பூச்சி)",
+        "name_en": "Sawfly",
+        "pesticides": [
+            {
+                "name_ta": "நீம் எண்ணெய்",
+                "name_en": "Neem Oil",
+                "dosage_ta": "5 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "5 ml per 1 liter of water",
+                "image": "static/pesticides/neem_oil.jpg"
+            },
+            {
+                "name_ta": "டெல்டாமெத்ரின்",
+                "name_en": "Deltamethrin",
+                "dosage_ta": "2 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "2 ml per 1 liter of water",
+                "image": "static/pesticides/deltamethrin.jpg"
+            }
+        ],
+        "usage_ta": "காலை நேரத்தில் இலைகளின் மேல் தெளிக்கவும்.",
+        "usage_en": "Spray on leaves in the morning."
+    },
+    "stem_borer": {
+        "name_ta": "ஸ்டெம் போரர் (தண்டு மற்றும் வேர்களை தாக்கும்)",
+        "name_en": "Stem Borer",
+        "pesticides": [
+            {
+                "name_ta": "குளோரன்ட்ரானிலிபிரோல்",
+                "name_en": "Chlorantraniliprole",
+                "dosage_ta": "3 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "3 ml per 1 liter of water",
+                "image": "static/pesticides/chlorantraniliprole.jpg"
+            },
+            {
+                "name_ta": "ஃபைப்ரோநில்",
+                "name_en": "Fipronil",
+                "dosage_ta": "2 மில்லி / 1 லிட்டர் தண்ணீர்",
+                "dosage_en": "2 ml per 1 liter of water",
+                "image": "static/pesticides/fipronil.jpg"
+            }
+        ],
+        "usage_ta": "தண்டு மற்றும் நிலப்பகுதியில் தெளிக்கவும்.",
+        "usage_en": "Spray on stems and soil."
+    }
+
+}
